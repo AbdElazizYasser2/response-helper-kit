@@ -1,0 +1,35 @@
+{
+  "name": "response-helper-kit",
+  "version": "1.0.0",
+  "description": "Simple API response helpers for Node.js and TypeScript",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc -p tsconfig.build.json",
+    "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js"
+  },
+  "keywords": [
+    "api",
+    "response",
+    "nodejs",
+    "typescript"
+  ],
+  "author": "Abdelaziz Yasser",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/jest": "^30.0.0",
+    "jest": "^30.5.2",
+    "ts-jest": "^29.4.14",
+    "typescript": "^6.0.3"
+  }
+}
